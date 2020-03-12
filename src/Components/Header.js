@@ -41,7 +41,8 @@ const Example = (props) => {
       <Navbar expand="md" light style={{ backgroundColor : 'none' }}>
         {/* <NavbarBrand> */}
           <Link to='/' style={{color: 'gray', textDecoration: 'none'}}>
-          <img src={Image} alt='image' style={{width:'160px'}}/>
+          {/* <img src={Image} alt='image' style={{width:'160px'}}/> */}
+          Shoesilo
           </Link>
         {/* </NavbarBrand> */}
         <NavbarToggler onClick={toggle} />

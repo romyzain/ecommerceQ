@@ -14,12 +14,16 @@ export const Login = (username, password) => {
     return (dispatch) => {
         Axios.get(`${API_URL}/users?username=${username}&password=${password}`)
         .then((res) => {
-            console.log(res)
-            localStorage.setItem('token', JSON.stringify({username,password}))
-            dispatch({
-                type :'LOGIN',
-                payload: res.data[0] //berasal dari axios
-            })
+            if(res.data.length === 0){
+                window.alert('Login Failed')
+            }else{
+                console.log(res)
+                localStorage.setItem('token', JSON.stringify({username,password}))
+                dispatch({
+                    type :'LOGIN',
+                    payload: res.data[0] //berasal dari axios
+                })
+            }
         })
         .catch((err) => {
             console.log(err)
