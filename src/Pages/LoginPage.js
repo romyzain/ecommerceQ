@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 import { Input, FormGroup, Label, Form, Button } from 'reactstrap';
 import { Link, Redirect } from 'react-router-dom';
-import axios from 'axios';
+// import axios from 'axios';
 import { connect } from 'react-redux';
 import { Login } from '../Redux/Action';
-import { API_URL } from '../Support/API_URL'
+// import { API_URL } from '../Support/API_URL'
 
 class LoginPage extends Component {
     state = {  }

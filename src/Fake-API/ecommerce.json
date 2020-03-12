@@ -92,6 +92,14 @@
       "price": 1350000,
       "category": "Men",
       "image": "https://www.searchpng.com/wp-content/uploads/2019/01/Nike-Shoe-PNG-1024x1024.png"
+    },
+    {
+      "name": "LOL",
+      "brand": "NAIK",
+      "price": "",
+      "category": "Men",
+      "image": "",
+      "id": 9
     }
   ],
   "latihan": [

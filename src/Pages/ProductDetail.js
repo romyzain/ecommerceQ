@@ -80,7 +80,7 @@ class productDetail extends Component {
         }
         return(
             <div className='row'>
-                <div className='col-6' className='shoesBackground'>
+                <div className='col-6 shoesBackground'>
                     <img src={data.image} alt='sepatu' width='400px' height='400px'/>
                 </div>
                 <div className='col-5 shoesBackground'>

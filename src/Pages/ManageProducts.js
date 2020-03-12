@@ -118,7 +118,7 @@ class ManageProducts extends Component {
         .then((res) => {
             console.log(res)
             this.setState({selectedId : null})
-            {this.fetchData()} //merefresh data
+            this.fetchData() //merefresh data{}
         })
         .catch((err) => {
             console.log(err)

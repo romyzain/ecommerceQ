@@ -12,8 +12,8 @@ import LatihanAxios from './Pages/LatihanAxios';
 import Review from './Pages/Review'
 import productDetail from './Pages/ProductDetail';
 import ManageProducts from './Pages/ManageProducts'
-import Axios from 'axios';
-import { API_URL }from './Support/API_URL'
+// import Axios from 'axios';
+// import { API_URL }from './Support/API_URL'
 import { Login, KeepLogin } from './Redux/Action'
 import { connect } from 'react-redux';
 

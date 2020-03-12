@@ -16,7 +16,7 @@ import { faUser } from '@fortawesome/free-solid-svg-icons';
 import { Link } from 'react-router-dom';
 import { useSelector, useDispatch } from 'react-redux';
 import { Logout } from '../Redux/Action';
-import Image from '../Public/Assets/youtube.png'
+// import Image from '../Public/Assets/youtube.png'
 
 const Example = (props) => {
   const [isOpen, setIsOpen] = useState(false);
