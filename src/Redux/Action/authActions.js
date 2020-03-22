@@ -17,8 +17,8 @@ export const Login = (username, password) => {
             if(res.data.length === 0){
                 window.alert('Login Failed')
             }else{
-                console.log(res)
-                localStorage.setItem('token', JSON.stringify({username,password}))
+                console.log(res.data)
+                localStorage.setItem('token', JSON.stringify({username,password, id: res.data[0].id}))
                 dispatch({
                     type :'LOGIN',
                     payload: res.data[0] //berasal dari axios
@@ -59,19 +59,4 @@ export const Logout = () => {
     return{
         type : 'LOGOUT'
     }
-}
-
- export const MapProducts = () => {
-     return(dispatch) => {
-         Axios.get(`${API_URL}/products`)
-         .then((res) => {
-             this.setState({
-                 data : res.data
-                })
-                console.log(this.state.data)
-            })
-            .catch((err) => {
-                console.log(err)
-            })
-        }
 }

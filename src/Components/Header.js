@@ -4,6 +4,7 @@ import {
   Navbar,
   NavbarToggler,
   Nav,
+  NavbarBrand,
   NavItem,
   NavLink,
   UncontrolledDropdown,
@@ -39,17 +40,14 @@ const Example = (props) => {
   return (
     <div>
       <Navbar expand="md" light style={{ backgroundColor : 'none' }}>
-        {/* <NavbarBrand> */}
-          <Link to='/' style={{color: 'gray', textDecoration: 'none'}}>
-          {/* <img src={Image} alt='image' style={{width:'160px'}}/> */}
+          <NavbarBrand tag={Link} to={'/'}>
           Shoesilo
-          </Link>
-        {/* </NavbarBrand> */}
+          </NavbarBrand>
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>
           <Nav className="mr-auto" navbar>
             <NavItem>
-              <NavLink>Men</NavLink>
+              <NavLink tag={Link} to={'/products'}>Men</NavLink>
             </NavItem>
             <NavItem>
               <NavLink>Women</NavLink>
@@ -61,26 +59,42 @@ const Example = (props) => {
           {/* <Nav navbar> */}
             <UncontrolledDropdown nav inNavbar style={{ float: 'right' }}>
               <DropdownToggle nav caret>
+                {
+                  gState.logged ?
+                  <div style={{display: 'inline', fontWeight: '700'}}>
+                    {gState.username}
+                  </div>
+                  :
                 <FontAwesomeIcon icon={faUser}/>
+                }
               </DropdownToggle>
               {
                 gState.logged
                 ?
                 <DropdownMenu right>
+                  <Link to='/cart'>
                     <DropdownItem>
                       Cart
                     </DropdownItem>
-                    <DropdownItem>
-                      Transaction History
+                  </Link>
+                  <Link to='/transaction'>
+                  <DropdownItem>
+                    Transaction History
+                  </DropdownItem>
+                  </Link>
+                  <DropdownItem>
+                    Payment
+                  </DropdownItem>
+                  <Link to='/profile'>
+                  <DropdownItem>
+                    Profile
+                  </DropdownItem>
+                  </Link>
+                  <Link to ='/'>
+                    <DropdownItem onClick={logOut}>
+                      Log Out
                     </DropdownItem>
-                    <DropdownItem>
-                      Profile
-                    </DropdownItem>
-                    <Link to ='/'>
-                      <DropdownItem onClick={logOut}>
-                        Log Out
-                      </DropdownItem>
-                    </Link>
+                  </Link>
                 </DropdownMenu>
                 :
                 <DropdownMenu right>
@@ -95,7 +109,6 @@ const Example = (props) => {
                     </DropdownItem>
                   </Link>
                 </DropdownMenu>
-                
               }
             </UncontrolledDropdown>
           </Nav>

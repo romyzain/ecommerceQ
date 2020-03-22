@@ -55,7 +55,7 @@ class LoginPage extends Component {
         }
 
         return ( 
-            <div className='d-flex justify-content-center' style={{height : '100vh', alignItems : 'center'}}>
+            <div className='d-flex justify-content-center register' style={{height : '100vh', alignItems : 'center'}}>
                 <Form style={{width : '400px', height: '400px'}}>
                     <FormGroup>
                       <Label for="exampleEmail">Username</Label>

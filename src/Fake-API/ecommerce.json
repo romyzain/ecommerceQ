@@ -34,39 +34,38 @@
       "password": "123456",
       "role": "user",
       "id": 5
+    },
+    {
+      "username": "",
+      "email": "",
+      "password": "",
+      "role": "user",
+      "id": 6
     }
   ],
   "products": [
     {
-      "name": "ゼロツー",
-      "brand": "002",
-      "price": "",
-      "category": "PUNYAKU",
-      "image": "https://i.pximg.net/img-master/img/2019/11/21/23/14/46/77925384_p0_master1200.jpg",
-      "id": 1
-    },
-    {
-      "name": "ゼロツー",
-      "brand": "002",
-      "price": "",
-      "category": "PUNYAKU JUGA",
-      "image": "https://scontent.fcgk19-1.fna.fbcdn.net/v/t1.0-9/84114309_186409875902090_7691561921987739648_n.jpg?_nc_cat=106&_nc_sid=07e735&_nc_eui2=AeE0v3gWVL8c5LlHLGbtB78rTxfDv0mDjtWb4QReNce-nr0ZAR1G6pe-ect3qr8gEiXPGfBmotIZCwzNe6IPfPm_APFQ4Wi1pyYydlrwv_haTw&_nc_oc=AQlgiU5c5TduU5WKgVUq1PCBn9AM2dhRnFeNcnimqz4DTmHegh34JxgTX152z8clDUI&_nc_ht=scontent.fcgk19-1.fna&oh=5130df466a59a668609796f3b4fe113d&oe=5E93013A",
+      "name": "Air Jordan 1 High Slurp",
+      "brand": "Jordan",
+      "price": 2300000,
+      "category": "Men",
+      "image": "https://www.searchpng.com/wp-content/uploads/2019/01/Nike-Shoe-PNG-1024x1024.png",
       "id": 2
     },
     {
       "name": "Air Jordan 1 Low Noble Red",
-      "brand": "002",
-      "price": "",
-      "category": "VVIBU",
-      "image": "https://scontent.fcgk19-1.fna.fbcdn.net/v/t1.0-9/84179335_186409922568752_3978432076050333696_n.jpg?_nc_cat=101&_nc_sid=07e735&_nc_eui2=AeEyAQBTu6BgMtpBsQRt8fPHa7ROOuZsiEle_sa4LtriEoUDwnfuZ_usEnjLKOY4jV8F8CRYFON3_V_bKjSGeH6gcuakOwhfqFvVtK2NvXuwtg&_nc_oc=AQmdBAzsLcUQtRDYlBSSfFEnYyp83SW7WX_J4sOfWRR0SDepw7-fPfL43BznHmNh0wM&_nc_ht=scontent.fcgk19-1.fna&oh=e2bd62f07fe8c5f9d01c0b4853183c0c&oe=5E94BFA0",
+      "brand": "Jordan",
+      "price": 1200000,
+      "category": "Men",
+      "image": "https://www.searchpng.com/wp-content/uploads/2019/01/Nike-Shoe-PNG-1024x1024.png",
       "id": 3
     },
     {
       "name": "Jordan 1 Mid Multi Color Swoosh",
       "brand": "Jordan",
-      "price": "1350000",
+      "price": 1350000,
       "category": "Men",
-      "image": "https://scontent.fcgk19-1.fna.fbcdn.net/v/t1.0-9/84668435_186409899235421_9090001018707509248_n.jpg?_nc_cat=100&_nc_sid=07e735&_nc_eui2=AeERBwm3crUIv4uvIKpBGvp7Dd8P5IMqpaTxtMpIsTXOOfvPzBrXxsZCfiYm6jxryW30r9e5da2nLaxaWlnwODOvhRDaIPNhCycd-0CLIdWmCw&_nc_oc=AQnsrLSVEDgFDEqXwWpcfjFDMoKs0igaCGSkmQ4aoLaTSQ0nG7fWxPPgIuCVQz30Ap8&_nc_ht=scontent.fcgk19-1.fna&oh=3b3a3f1f3b59cf4a3cda90a3f7fe0e54&oe=5E957B8D",
+      "image": "https://www.searchpng.com/wp-content/uploads/2019/01/Nike-Shoe-PNG-1024x1024.png",
       "id": 4
     },
     {
@@ -94,12 +93,20 @@
       "image": "https://www.searchpng.com/wp-content/uploads/2019/01/Nike-Shoe-PNG-1024x1024.png"
     },
     {
-      "name": "LOL",
-      "brand": "NAIK",
-      "price": "",
+      "name": "Jordan 5 Mod Pack",
+      "brand": "Jordan",
+      "price": 2030000,
       "category": "Men",
-      "image": "",
+      "image": "https://www.searchpng.com/wp-content/uploads/2019/01/Nike-Shoe-PNG-1024x1024.png",
       "id": 9
+    },
+    {
+      "name": "Air Max 20 Blobs",
+      "brand": "Nike",
+      "price": 1600000,
+      "category": "Men",
+      "image": "https://www.searchpng.com/wp-content/uploads/2019/01/Nike-Shoe-PNG-1024x1024.png",
+      "id": 10
     }
   ],
   "latihan": [
@@ -120,6 +127,159 @@
       "nama": "あさわ",
       "boolean": "つる",
       "laptop": "あcえる"
+    }
+  ],
+  "cart": [],
+  "transaction": [
+    {
+      "date": "Friday, 20 March 2020",
+      "userId": 2,
+      "products": [
+        {
+          "sizes": 40,
+          "userId": 2,
+          "image": "https://www.searchpng.com/wp-content/uploads/2019/01/Nike-Shoe-PNG-1024x1024.png",
+          "quantity": 3,
+          "price": 4000000,
+          "name": "Air Max 90 City Pack London",
+          "productId": 7,
+          "brand": "Nike",
+          "id": 16
+        },
+        {
+          "sizes": 40,
+          "userId": 2,
+          "image": "https://www.searchpng.com/wp-content/uploads/2019/01/Nike-Shoe-PNG-1024x1024.png",
+          "quantity": 1,
+          "price": 2300000,
+          "name": "Air Jordan 1 High Slurp",
+          "productId": 2,
+          "brand": "Jordan",
+          "id": 18
+        },
+        {
+          "sizes": 42,
+          "userId": 2,
+          "image": "https://www.searchpng.com/wp-content/uploads/2019/01/Nike-Shoe-PNG-1024x1024.png",
+          "quantity": 1,
+          "price": 2300000,
+          "name": "Air Jordan 1 High Slurp",
+          "productId": 2,
+          "brand": "Jordan",
+          "id": 19
+        }
+      ],
+      "total": 16600000,
+      "id": 1
+    },
+    {
+      "date": "Friday, 20 March 2020",
+      "userId": 2,
+      "products": [
+        {
+          "sizes": 41,
+          "userId": 2,
+          "image": "https://www.searchpng.com/wp-content/uploads/2019/01/Nike-Shoe-PNG-1024x1024.png",
+          "quantity": 2,
+          "price": 2300000,
+          "name": "Air Jordan 1 High Slurp",
+          "productId": 2,
+          "brand": "Jordan",
+          "id": 1
+        },
+        {
+          "sizes": 43,
+          "userId": 2,
+          "image": "https://www.searchpng.com/wp-content/uploads/2019/01/Nike-Shoe-PNG-1024x1024.png",
+          "quantity": 1,
+          "price": 1350000,
+          "name": "Jordan 1 Mid Multi Color Swoosh",
+          "productId": 4,
+          "brand": "Jordan",
+          "id": 2
+        }
+      ],
+      "total": 5950000,
+      "id": 2
+    },
+    {
+      "date": "Friday, 20 March 2020",
+      "userId": 2,
+      "products": [
+        {
+          "sizes": 41,
+          "userId": 2,
+          "image": "https://www.searchpng.com/wp-content/uploads/2019/01/Nike-Shoe-PNG-1024x1024.png",
+          "quantity": 1,
+          "price": 2300000,
+          "name": "Air Jordan 1 High Slurp",
+          "productId": 2,
+          "brand": "Jordan",
+          "id": 1
+        },
+        {
+          "sizes": 42,
+          "userId": 2,
+          "image": "https://www.searchpng.com/wp-content/uploads/2019/01/Nike-Shoe-PNG-1024x1024.png",
+          "quantity": 2,
+          "price": 1350000,
+          "name": "Jordan 1 Mid Multi Color Swoosh",
+          "productId": 4,
+          "brand": "Jordan",
+          "id": 2
+        }
+      ],
+      "total": 5000000,
+      "id": 3
+    },
+    {
+      "date": "Friday, 20 March 2020",
+      "userId": 2,
+      "products": [
+        {
+          "sizes": 42,
+          "userId": 2,
+          "image": "https://www.searchpng.com/wp-content/uploads/2019/01/Nike-Shoe-PNG-1024x1024.png",
+          "quantity": 2,
+          "price": 1350000,
+          "name": "Jordan 1 Mid Multi Color Swoosh",
+          "productId": 4,
+          "brand": "Jordan",
+          "id": 2
+        }
+      ],
+      "total": 2700000,
+      "id": 4
+    },
+    {
+      "date": "Friday, 20 March 2020",
+      "userId": 2,
+      "products": [
+        {
+          "sizes": 42,
+          "userId": 2,
+          "image": "https://www.searchpng.com/wp-content/uploads/2019/01/Nike-Shoe-PNG-1024x1024.png",
+          "quantity": 2,
+          "price": 1350000,
+          "name": "Jordan 1 Mid Multi Color Swoosh",
+          "productId": 4,
+          "brand": "Jordan",
+          "id": 1
+        },
+        {
+          "sizes": 43,
+          "userId": 2,
+          "image": "https://www.searchpng.com/wp-content/uploads/2019/01/Nike-Shoe-PNG-1024x1024.png",
+          "quantity": 1,
+          "price": 1350000,
+          "name": "Jordan 1 Mid Multi Color Swoosh",
+          "productId": 4,
+          "brand": "Jordan",
+          "id": 2
+        }
+      ],
+      "total": 4050000,
+      "id": 5
     }
   ]
 }

@@ -10,8 +10,11 @@ import RegisterPage from './Pages/RegisterHooks'
 import ProductsPage from './Pages/ProductsPage'
 import LatihanAxios from './Pages/LatihanAxios';
 import Review from './Pages/Review'
-import productDetail from './Pages/ProductDetail';
+import ProductDetail from './Pages/ProductDetail';
 import ManageProducts from './Pages/ManageProducts'
+import Cart from './Pages/Cart'
+import TransactionHistory from './Pages/TransactionHistory'
+import Profile from './Pages/Profile'
 // import Axios from 'axios';
 // import { API_URL }from './Support/API_URL'
 import { Login, KeepLogin } from './Redux/Action'
@@ -55,8 +58,11 @@ class App extends Component{
         <Route path='/products' component={ProductsPage} />
         <Route path='/latihan' component={LatihanAxios} />
         <Route path='/review' component={Review} />
-        <Route path='/product-detail' component={productDetail} />
+        <Route path='/product-detail' component={ProductDetail} />
         <Route path='/manage-products' component={ManageProducts} />
+        <Route path='/cart' component={Cart} />
+        <Route path='/transaction' component={TransactionHistory} />
+        <Route path='/profile' component={Profile} />
         <Footer/>
       </div>
     )

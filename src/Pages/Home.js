@@ -28,9 +28,9 @@ class Home extends Component {
 
     renderCardHome = () => {
       let { dataCard } = this.state;
-      return dataCard.map((val) => {
+      return dataCard.map((val,index) => {
         return(
-          <div className='col-4'>
+          <div key={index} className='col-4'>
             <CardHome
               image={val.image}
               name={val.name}

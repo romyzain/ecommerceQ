@@ -11,7 +11,6 @@ class ManageProducts extends Component {
 
     }
     componentDidMount(){
-        
         Axios.get(`${API_URL}/products`)
         .then((res) => {
             this.setState({
@@ -23,9 +22,6 @@ class ManageProducts extends Component {
             console.log(err)
         })
         //this.fetchData() sama saja
-
-
-
     }
 
     fetchData = () => {
@@ -42,11 +38,11 @@ class ManageProducts extends Component {
     }
 
     renderTable = () => {
-        return this.state.data.map((val) => {
+        return this.state.data.map((val,index) => {
             if(val.id === this.state.selectedId){
                 return(
                     <tr>
-                        <td></td>
+                        <td>{index}</td>
                         <td>
                             <Input defaultValue={val.name} innerRef={(editName) => this.editName=editName}/>
                         </td>
@@ -118,7 +114,7 @@ class ManageProducts extends Component {
         .then((res) => {
             console.log(res)
             this.setState({selectedId : null})
-            this.fetchData() //merefresh data{}
+            this.fetchData()
         })
         .catch((err) => {
             console.log(err)
@@ -151,15 +147,10 @@ class ManageProducts extends Component {
             }
         })
             .catch((err) => {
+                console.log(err)
         
             })
     }
-
-
-
-
-
-
 
     addProduct = () => {
         let name = this.name.value
@@ -175,8 +166,6 @@ class ManageProducts extends Component {
             category,
             image
         }
-
-
         Axios.post(`${API_URL}/products`, productData)
         .then((res) =>{
             console.log(res.data)
@@ -186,43 +175,9 @@ class ManageProducts extends Component {
         })
         this.fetchData()
     }
-
-    // deleteProduct = () => {
-    //     let id=this.props.location.search.split('=')[1]
-    //     console.log(id)
-
-    //     let name = this.name.value
-    //     let brand = this.brand.value
-    //     let price = this.price.value
-    //     let category = this.category.value
-    //     let image = this.image.value
         
-    //     let productData= {
-    //         name,
-    //         brand,
-    //         price,
-    //         category,
-    //         image
-    //     }
-    //     console.log(productData)
-
-    //     Axios.delete(`${API_URL}/products/${id}`, productData)
-    //     .then((res) => {
-    //         this.setState({
-    //             data:res.data
-    //         })
-    //         console.log(this.res.data)      
-    //     })
-    //     .catch((err) => {
-    //         console.log(err)
-    //     })
-    // }
-        
-    
-
     render(){
         return(
-
             <div>
                 <Table dark>
                     <thead>
@@ -262,7 +217,7 @@ class ManageProducts extends Component {
                     </tfoot>
                 </Table>
             </div>
-        
+
         )
     }
 }

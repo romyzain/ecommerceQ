@@ -54,9 +54,9 @@ class ProductsPage extends Component{
     // }
 
     renderCardProduct = () => {
-        return this.props.product.map((val) => {
+        return this.props.product.map((val,index) => {
             return(
-                <Link to={`/product-detail?id=${val.id}`}>
+                <Link key={index} to={`/product-detail?id=${val.id}`}>
                     <ProductCard 
                         name={val.name}
                         image={val.image}
