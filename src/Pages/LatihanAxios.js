@@ -39,7 +39,9 @@ class LatihanAxios extends Component {
         Axios.get('http://localhost:2000/latihan')
         .then((res) => {
             console.log(res, 'ini get')
-            this.setState({data: res.data})
+            this.setState({
+                data: res.data
+            })
         })
         .catch((err) => {
             console.log(err)

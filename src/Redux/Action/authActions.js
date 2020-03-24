@@ -60,3 +60,26 @@ export const Logout = () => {
         type : 'LOGOUT'
     }
 }
+
+export const passChange = (id, passNew, username) => {
+    return(dispatch) => {
+        Axios.patch(`${API_URL}/users/${id}`, {password : passNew})
+        .then((res) => {
+            dispatch({
+                type: 'CHANGE_PASSWORD',
+                payload : passNew
+            })
+            localStorage.removeItem('token')
+            localStorage.setItem('token', JSON.stringify({
+                username : username,
+                password : passNew,
+                id :id
+            }))
+
+        })
+        .catch((err) => {
+            console.log(err)
+        })
+    }
+
+}

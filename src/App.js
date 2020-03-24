@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import Home from './Pages/Home';
-import { Route } from 'react-router-dom';
+import { Route, Switch } from 'react-router-dom';
 import Header from './Components/Header';
 import Footer from './Components/Footer';
 import LoginPage from './Pages/LoginPage';
@@ -19,6 +19,7 @@ import Profile from './Pages/Profile'
 // import { API_URL }from './Support/API_URL'
 import { Login, KeepLogin } from './Redux/Action'
 import { connect } from 'react-redux';
+import NotFound from './Pages/NotFound'
 
 class App extends Component{
 
@@ -47,11 +48,12 @@ class App extends Component{
     //   })
     // }
   }
-
+  
   render(){
     return(
       <div>
         <Header />
+        <Switch>
         <Route path='/' component={Home} exact/>
         <Route path='/login' component={LoginPage} />
         <Route path='/register' component={RegisterPage} />
@@ -63,6 +65,8 @@ class App extends Component{
         <Route path='/cart' component={Cart} />
         <Route path='/transaction' component={TransactionHistory} />
         <Route path='/profile' component={Profile} />
+        <Route component={NotFound}/>
+        </Switch>
         <Footer/>
       </div>
     )

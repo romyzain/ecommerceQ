@@ -36,7 +36,25 @@ class ProductDetail extends Component {
                 value : 44,
                 label : 44
             },
-        ],selectSizes: ''
+        ],selectSizes: '',
+        qty : [
+            {
+                value : 1,
+                label : 1
+            },
+            {
+                value : 2,
+                label : 2
+            },
+            {
+                value : 3,
+                label : 3
+            },
+            {
+                value : 4,
+                label : 4
+            }
+        ], selectQty : ''
      }
 
     componentDidMount(){
@@ -71,6 +89,12 @@ class ProductDetail extends Component {
             selectSizes : e.value
         })
     }
+
+    selectQty = (e) => {
+        this.setState({
+            selectQty : e.value
+        })
+    }
     
     handleClick = () => {
         let userId = this.props.userId
@@ -79,7 +103,7 @@ class ProductDetail extends Component {
         let category = this.state.category
         let image = this.state.data.image
         let sizes = this.state.selectSizes
-        let quantity = 1
+        let quantity = this.state.selectQty
         let price = this.state.data.price
         let name = this.state.data.name
 
@@ -165,6 +189,8 @@ class ProductDetail extends Component {
                     </div>
                     <div style={{width:'300px'}} >
                         <Select placeholder='Select Size'ref='size' onChange={this.selectSizes} options={this.state.sizes}/>
+                        <br></br>
+                        <Select placeholder='Select Qty'ref='size' onChange={this.selectQty} options={this.state.qty}/>
                     </div>
                         <Button color='primary' className='btnBuy' onClick={() => this.handleClick()}>
                             Add to cart

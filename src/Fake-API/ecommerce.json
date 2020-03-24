@@ -17,7 +17,7 @@
     {
       "username": "asd",
       "email": "asd",
-      "password": "asd",
+      "password": "biasa",
       "role": "user",
       "id": 3
     },
@@ -36,9 +36,9 @@
       "id": 5
     },
     {
-      "username": "",
-      "email": "",
-      "password": "",
+      "username": "lolix1",
+      "email": "loxli@gmail.com",
+      "password": "12345",
       "role": "user",
       "id": 6
     }
@@ -112,9 +112,9 @@
   "latihan": [
     {
       "id": 1,
-      "nama": "徐々に",
-      "boolean": "つる",
-      "laptop": "この　ぢおだ"
+      "nama": "ada",
+      "boolean": "ads",
+      "laptop": "dasd"
     },
     {
       "id": 2,
@@ -280,6 +280,36 @@
       ],
       "total": 4050000,
       "id": 5
+    },
+    {
+      "date": "Tuesday, 24 March 2020",
+      "userId": 2,
+      "products": [
+        {
+          "sizes": 41,
+          "userId": 2,
+          "image": "https://www.searchpng.com/wp-content/uploads/2019/01/Nike-Shoe-PNG-1024x1024.png",
+          "quantity": 5,
+          "price": 2300000,
+          "name": "Air Jordan 1 High Slurp",
+          "productId": 2,
+          "brand": "Jordan",
+          "id": 1
+        },
+        {
+          "sizes": 41,
+          "userId": 2,
+          "image": "https://www.searchpng.com/wp-content/uploads/2019/01/Nike-Shoe-PNG-1024x1024.png",
+          "quantity": 2,
+          "price": 1200000,
+          "name": "Air Jordan 1 Low Noble Red",
+          "productId": 3,
+          "brand": "Jordan",
+          "id": 2
+        }
+      ],
+      "total": 13900000,
+      "id": 6
     }
   ]
 }

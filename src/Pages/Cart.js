@@ -200,7 +200,7 @@ class Cart extends Component{
             )
         }else if(this.state.finishCart){
             return(
-                <Redirect to='/payment'/>
+                <Redirect to='/transaction'/>
             )
         }
         return(
@@ -229,8 +229,8 @@ class Cart extends Component{
                             <td></td>
                             <td>{this.state.grandTotal.toLocaleString('id-ID',{style:'currency', currency:'IDR'})}</td>
                             <td>
-                                <Button color="primary" onClick={this.payment}> 
-                                    Go To Payment
+                                <Button color="success" onClick={this.payment}> 
+                                    Check Out
                                 </Button>
                             </td>
                         </tr>

@@ -5,6 +5,7 @@ import { Link, Redirect } from 'react-router-dom';
 import Axios from 'axios';
 import { API_URL } from '../Support/API_URL';
 import { Login } from '../Redux/Action'
+import Swal from 'sweetalert2'
 
 const RegisterHooks = () => {
 
@@ -28,10 +29,12 @@ const RegisterHooks = () => {
 
     const onBtnRegister = async () => {
         let { username, email, password, confirmPass } = formInput
+        let checkStr=/^(?=.*?<[0-9](?=.*[!`#&%$=~¥]{8,}$))/
         let res = await Axios.get(`${API_URL}/users?username=${username}`)
         console.log(res)
         if(password === confirmPass){
             if(res.data.length > 0){
+                checkStr()
                 window.alert('Username already taken')
             }else{
                 let post = await Axios.post(`${API_URL}/users`, {
@@ -43,7 +46,11 @@ const RegisterHooks = () => {
                 dispatch(Login(post.data))
             }
         }else{
-            window.alert('Invalid Password')
+            Swal.fire({
+                icon: 'error',
+                title: 'Oops...',
+                text: 'Invalid Password!'
+              })
         }
     }
     if(logged){
